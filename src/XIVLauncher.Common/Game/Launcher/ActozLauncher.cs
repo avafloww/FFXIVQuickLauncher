@@ -73,7 +73,7 @@ public class ActozLauncher : ILauncher
     public async Task<PatchListEntry[]> CheckGameVersion(DirectoryInfo gamePath, bool forceBaseVersion = false)
     {
         var request = new HttpRequestMessage(HttpMethod.Get,
-            $"http://gamever-live.ff14.co.kr/http/win32/actoz_release_ko_game/{(forceBaseVersion ? Constants.BASE_GAME_VERSION : Repository.Ffxiv.GetVer(gamePath))}/");
+            $"http://ngamever-live.ff14.co.kr/http/win32/actoz_release_ko_game/{(forceBaseVersion ? Constants.BASE_GAME_VERSION : Repository.Ffxiv.GetVer(gamePath))}/");
 
         request.Headers.AddWithoutValidation("X-Hash-Check", "enabled");
         request.Headers.AddWithoutValidation("User-Agent", PATCHER_USER_AGENT);
