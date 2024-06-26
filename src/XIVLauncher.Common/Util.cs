@@ -388,6 +388,12 @@ namespace XIVLauncher.Common
                 failed &= string.IsNullOrWhiteSpace(Repository.Ex4.GetVer(gamePath));
                 failed &= string.IsNullOrWhiteSpace(Repository.Ex4.GetVer(gamePath, true));
             }
+            
+            if (exLevel >= 5)
+            {
+                failed &= string.IsNullOrWhiteSpace(Repository.Ex5.GetVer(gamePath));
+                failed &= string.IsNullOrWhiteSpace(Repository.Ex5.GetVer(gamePath, true));
+            }
 
             if (failed)
                 throw new InvalidVersionFilesException();

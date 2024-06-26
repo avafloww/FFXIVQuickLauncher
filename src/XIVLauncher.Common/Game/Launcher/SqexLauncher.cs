@@ -270,6 +270,9 @@ public class SqexLauncher : ILauncher
 
         if (exLevel >= 4)
             verReport += $"\nex4\t{(forceBaseVersion ? Constants.BASE_GAME_VERSION : Repository.Ex4.GetVer(gamePath))}";
+        
+        if (exLevel >= 5)
+            verReport += $"\nex5\t{(forceBaseVersion ? Constants.BASE_GAME_VERSION : Repository.Ex5.GetVer(gamePath))}";
 
         return verReport;
     }

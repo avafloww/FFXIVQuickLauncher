@@ -514,6 +514,9 @@ namespace XIVLauncher.Common.Game.Patch
 
             if (patch.Url.Contains("ex4"))
                 return Repository.Ex4;
+            
+            if (patch.Url.Contains("ex5"))
+                return Repository.Ex5;
 
             return Repository.Ffxiv;
         }
