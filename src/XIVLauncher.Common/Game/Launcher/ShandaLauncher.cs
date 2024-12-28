@@ -50,7 +50,7 @@ public class ShandaLauncher : ILauncher
 
     // TODO(Ava): not 100% sure this is correct, don't quote me on it
     private const string PATCHER_USER_AGENT = "FFXIV_Patch";
-    private const int CURRENT_EXPANSION_LEVEL = 4;
+    private const int CURRENT_EXPANSION_LEVEL = 5;
 
     public async Task<LoginResult> Login(string userName, string password, string otp, bool isSteam, bool useCache, DirectoryInfo gamePath, bool forceBaseVersion, bool isFreeTrial)
     {
